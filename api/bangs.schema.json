@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Kagi Bangs Schema",
+    "description": "This schema defines the structure for bangs used by Kagi Search",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "s": {
+          "type": "string",
+          "title": "Website Name",
+          "description": "The name of the website associated with the bang."
+        },
+        "d": {
+          "type": "string",
+          "title": "Domain",
+          "description": "The domain name of the website."
+        },
+        "t": {
+          "type": "string",
+          "title": "Trigger",
+          "description": "The specific trigger word or phrase used to invoke the bang."
+        },
+        "u": {
+          "type": "string",
+          "title": "Template URL",
+          "description": "The URL template to use when the bang is invoked, where `{{{s}}}` is replaced by the user's query."
+        },
+        "c": {
+          "type": "string",
+          "title": "Category",
+          "description": "The category of the website, if applicable.",
+          "enum": [
+            "Entertainment",
+            "Man Page",
+            "Multimedia",
+            "News",
+            "Online Services",
+            "Region search",
+            "Research",
+            "Shopping",
+            "Tech",
+            "Translation"
+          ]
+        },
+        "sc": {
+          "type": "string",
+          "title": "Subcategory",
+          "description": "The subcategory of the website, if applicable."
+        },
+        "fmt": {
+          "type": "array",
+          "title": "Format",
+          "description": "The format flags indicating how the query should be processed.",
+          "uniqueItems": true,
+          "minItems": 0,
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "enum": [
+              "open_base_path",
+              "url_encode_placeholder",
+              "url_encode_space_to_plus"
+            ]
+          }
+        }
+      },
+      "required": [
+        "d",
+        "s",
+        "t",
+        "u"
+      ],
+      "additionalProperties": false
+    }
+  }
