@@ -10,7 +10,7 @@ app = Flask(__name__)
 bangs_dict = load_bangs()
 
 # Route to handle search queries
-@app.route('/search')
+@app.route('/')
 def search():
     query = request.args.get('q')
     if not query:
