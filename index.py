@@ -23,7 +23,7 @@ def search():
         return redirect(search_url)
     else:
         # Fallback to Google search if no bang is found
-        google_search_url = f"https://www.google.com/search?q={query.replace(' ', '+')}"
+        google_search_url = f"https://www.google.com/search?q={query.replace(' ', '+')}&udm=14"
         return redirect(google_search_url)
 
 # Health check endpoint
