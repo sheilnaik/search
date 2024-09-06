@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, jsonify
+from flask import Flask, request, redirect, jsonify, render_template
 import os
 
 # Import the bangs parser functions
@@ -9,12 +9,12 @@ app = Flask(__name__)
 # Load the bangs dictionary when the app starts
 bangs_dict = load_bangs()
 
-# Route to handle search queries
+# Route to handle the root URL
 @app.route('/')
-def search():
+def home():
     query = request.args.get('q')
     if not query:
-        return jsonify({"error": "No query provided"}), 400
+        return render_template('index.html')  # Render the search landing page
     
     # Parse the query to find a bang and construct the search URL
     search_url = parse_bang(query, bangs_dict)
