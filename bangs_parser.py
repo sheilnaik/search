@@ -34,8 +34,13 @@ def parse_bang(query, bangs_dict):
     if not words:
         return None
 
-    # Extract the bang trigger from the first word
-    bang_trigger = words[0].lstrip('!')  # Remove leading '!' if present
+    # Extract the bang trigger and ensure it starts with '!'
+    bang_trigger = words[0]
+    if not bang_trigger.startswith('!'):
+        return None
+
+    # Remove the leading '!' for lookup
+    bang_trigger = bang_trigger.lstrip('!')
     search_terms = " ".join(words[1:])
 
     # Check if the bang trigger exists in the bangs dictionary
