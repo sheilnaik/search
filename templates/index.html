@@ -6,28 +6,14 @@
     <title>Search the Web</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet">
-    <style>
-        body {
-            @apply bg-base-100 text-base-content flex flex-col justify-center items-center h-screen m-0;
-        }
-        .search-box {
-            @apply text-center w-full max-w-xl;
-        }
-        input[type="text"] {
-            @apply w-full p-3 text-lg rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-primary;
-        }
-        input[type="submit"] {
-            @apply mt-5 p-3 text-lg rounded-lg bg-primary text-white shadow-md hover:bg-primary-focus cursor-pointer;
-        }
-    </style>
 </head>
-<body data-theme="dim">
-    <div class="search-box">
+<body data-theme="sunset" class="bg-base-100 text-base-content flex flex-col justify-center items-center h-screen m-0">
+    <div class="search-box text-center w-full max-w-xl">
         <h1 class="text-5xl font-bold mb-10">Search the Web</h1>
         <form action="/" method="get">
-            <input type="text" name="q" placeholder="Search the web..." autofocus>
+            <input type="text" name="q" placeholder="Search the web..." autofocus class="w-full p-3 text-lg rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-primary">
             <br>
-            <input type="submit" value="Search">
+            <input type="submit" value="Search" class="mt-5 p-3 text-lg rounded-lg bg-primary text-white shadow-md hover:bg-primary-focus cursor-pointer">
         </form>
     </div>
 </body>
