@@ -107,7 +107,7 @@
       "s": "Movies Lens",
       "d": "www.google.com",
       "t": "movies",
-      "u": "https://www.google.com/search?q={{{s}}}&udm=14 site:rottentomatoes.com OR site:metacritic.com OR site:wikipedia.org",
+      "u": "https://www.google.com/search?q={{{s}}}+site%3Arottentomatoes.com+OR+site%3Ametacritic.com+OR+site%3Awikipedia.org&udm=14",
       "c": "Online Services",
       "sc": "Google"
     }
