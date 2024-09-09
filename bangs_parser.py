@@ -34,6 +34,18 @@ def parse_bang(query, bangs_dict):
     if not words:
         return None
 
+    # Check if the query starts or ends with '!'
+    if words[0] == "!" or words[-1] == "!":
+        # Remove the bang symbol for lookup
+        if words[0] == "!":
+            search_terms = " ".join(words[1:])
+        else:
+            search_terms = " ".join(words[:-1])
+        
+        # Redirect to DuckDuckGo with ! search
+        duckduckgo_url = f"https://duckduckgo.com/?hps=1&q=%21+{re.sub(r'\s+', '+', search_terms)}"
+        return duckduckgo_url
+    
     # Extract the bang trigger and ensure it starts with '!'
     bang_trigger = words[0]
     if not bang_trigger.startswith('!'):
