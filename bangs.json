@@ -102,5 +102,13 @@
       "u": "https://www.amazon.com/s?k={{{s}}}",
       "c": "Shopping",
       "sc": "Online"
+    },
+    {
+      "s": "Movies Lens",
+      "d": "www.google.com",
+      "t": "movies",
+      "u": "https://www.google.com/search?q={{{s}}}&udm=14 site:rottentomatoes.com OR site:metacritic.com OR site:wikipedia.org",
+      "c": "Online Services",
+      "sc": "Google"
     }
 ]
