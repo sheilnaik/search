@@ -110,5 +110,13 @@
       "u": "https://www.google.com/search?q={{{s}}}+site%3Arottentomatoes.com+OR+site%3Ametacritic.com+OR+site%3Awikipedia.org&udm=14",
       "c": "Online Services",
       "sc": "Google"
-    }
+    },
+    {
+      "s": "eBay",
+      "d": "www.ebay.com",
+      "t": "ebay",
+      "u": "https://www.ebay.com/sch/items/?_nkw={{{s}}}",
+      "c": "Shopping",
+      "sc": "Online (marketplace)"
+    },
 ]
