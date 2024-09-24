@@ -119,4 +119,28 @@
       "c": "Shopping",
       "sc": "Online (marketplace)"
     },
+    {
+      "s": "Amazon.com",
+      "d": "www.amazon.com",
+      "t": "a",
+      "u": "https://www.amazon.com/s?k={{{s}}}",
+      "c": "Shopping",
+      "sc": "Online"
+    },
+    {
+      "s": "Amazon.com",
+      "d": "www.amazon.com",
+      "t": "z",
+      "u": "https://www.amazon.com/s?k={{{s}}}",
+      "c": "Shopping",
+      "sc": "Online"
+    },
+    {
+      "s": "Amazon Kindle",
+      "d": "www.amazon.com",
+      "t": "kindle",
+      "u": "https://www.amazon.com/s?k={{{s}}}&i=digital-text",
+      "c": "Multimedia",
+      "sc": "Books"
+    }
 ]
