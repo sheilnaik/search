@@ -142,5 +142,13 @@
       "u": "https://www.amazon.com/s?k={{{s}}}&i=digital-text",
       "c": "Multimedia",
       "sc": "Books"
+    },
+    {
+      "s": "Wolfram Alpha",
+      "d": "www.wolframalpha.com",
+      "t": "wolf",
+      "u": "https://www.wolframalpha.com/input?i={{{s}}}",
+      "c": "Search",
+      "sc": "Search"
     }
 ]
