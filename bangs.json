@@ -147,8 +147,8 @@
       "s": "Wolfram Alpha",
       "d": "www.wolframalpha.com",
       "t": "wolf",
-      "u": "https://www.wolframalpha.com/input?i={{{s}}}",
-      "c": "Search",
-      "sc": "Search"
+      "u": "https://www.wolframalpha.com/input/?i={{{s}}}",
+      "c": "Research",
+      "sc": "Academic (math/cs)"
     }
 ]
